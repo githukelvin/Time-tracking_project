@@ -1,0 +1,72 @@
+@use "./colors" as *;
+
+@mixin cinfo{
+    background: $Darkblue;
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    margin-top: -20px;
+    border-radius: 10px;
+    .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -37px;
+        z-index: 999;
+        padding-top: 35px;
+        p{
+            color: #fff;
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+        img{
+            width: 9%;
+            padding-left: 5px;
+            object-fit: contain;
+        }
+        
+    }
+     .rest{
+        margin-top: 25px;
+        // padding-bottom: 10px;
+        p {
+            // color: #fff;
+            color: $PaleBlue;
+            font-weight: 400;
+            font-size: .95em;
+        
+
+        }
+        
+            h1 {
+            color: #fff;
+                // color: $PaleBlue;
+                font-weight: 300;
+                font-size: 3.5em;
+                margin-bottom: 6px;
+            }
+     }
+
+   
+    
+    
+}
+
+@mixin disp($color,$size){
+    background: $color;
+    z-index: -23;
+    height:100%;
+    overflow: hidden;
+    border-radius: 10px;
+    .der{
+        width: 29%;
+        margin-top: $size;
+        overflow: hidden;
+        z-index: -133;
+        position: relative;
+        margin-left: 63%;
+        
+    }
+}
+
